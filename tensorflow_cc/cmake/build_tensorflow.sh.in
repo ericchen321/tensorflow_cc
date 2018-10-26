@@ -94,7 +94,7 @@ fi
 # configure and build
 ./configure
 bazel build --config=opt \
-            --config=monolithic \
+            --config=monolithic //tensorflow/tools/pip_package:build_pip_package \
             $cuda_config_opts \
             tensorflow:libtensorflow_cc.so
 bazel shutdown
