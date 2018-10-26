@@ -24,6 +24,8 @@ include(CMakePackageConfigHelpers)
 set(CMAKECFG_INSTALL_DIR lib/cmake/TensorflowCC)
 
 # Configure the build_tensorflow script.
+set(MY_PYTHON_BIN ${CMAKE_CURRENT_SOURCE_DIR}/../../anaconda/bin/python)
+set(MY_PYTHON_LIB ${CMAKE_CURRENT_SOURCE_DIR}/../../anaconda/lib/python3.6/site-packages)
 configure_file("cmake/build_tensorflow.sh.in" "build_tensorflow.sh" @ONLY)
 
 # --------------------------------------------------------
