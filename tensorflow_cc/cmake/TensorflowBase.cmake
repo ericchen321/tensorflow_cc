@@ -3,7 +3,7 @@ include(ExternalProject)
 
 ExternalProject_Add(
   tensorflow_base
-  GIT_REPOSITORY https://github.com/ericchen321/tensorflow.git
+  GIT_REPOSITORY https://github.com/ericchen321/tensorflow_1.8.git
   GIT_TAG "master"
   TMP_DIR "/tmp"
   STAMP_DIR "tensorflow-stamp"
